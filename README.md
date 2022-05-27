@@ -4,7 +4,7 @@ A command line tool template.
 
 ## Try it now!
 
-[Create repo from this template on Github](https://github.com/peterroe/ts-starter/generate)
+[Create repo from this template on Github](https://github.com/peterroe/cli-starter/generate)
 
 Or:
 
