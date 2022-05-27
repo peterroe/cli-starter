@@ -51,7 +51,7 @@ Update the `name`:
 Publish to npm:
 
 ```shell
-$ pnpm release
+$ pnpm release # or npm publish directly
 ```
 
 Install your own command line tool:
