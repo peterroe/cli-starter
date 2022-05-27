@@ -1,6 +1,6 @@
-## ts-starter
+## cli-starter
 
-A typescript template
+A command line tool template.
 
 ## Try it now!
 
@@ -9,21 +9,23 @@ A typescript template
 Or:
 
 ```bash
-$ npx degit peterroe/ts-starter my-ts
-$ cd my-ts
+$ npx degit peterroe/cli-starter my-cli
+$ cd my-cli
 $ pnpm i    # npm install -g pnpm
 ```
 
 ## Development
 
 ```shell
-$ pnpm start
+$ npx esno src/index.ts
 ```
 
-## Test
+## Example
 
-```bash
-$ pnpm test
+```shell
+$ npx esno src/index.ts -h
+$ npx esno src/index.ts -v
+$ npx esno src/index.ts lint one two
 ```
 
 ## Build
@@ -34,6 +36,28 @@ $ pnpm build
 
 ## Publish
 
+Update the `name`:
+
+```diff
+{
+- "name": "cli-starter",
++ "name": "xxx",
+  "bin": {
+-   "cli-starter": "./dist/index.mjs"
++   "xxx": "./dist/index.mjs"
+  },
+```
+
+Publish to npm:
+
 ```shell
 $ pnpm release
 ```
+
+Install your own command line tool:
+
+```
+$ npm install -g xxx
+```
+
+Then use it...
