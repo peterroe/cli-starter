@@ -11,11 +11,9 @@ specifiers:
   vite: 2.9.9
   vitest: 0.12.9
 
-dependencies:
-  cac: 6.7.12
-
 devDependencies:
   '@antfu/eslint-config': 0.24.2_eslint@8.16.0+typescript@4.6.4
+  cac: 6.7.12
   eslint: 8.16.0
   esno: 0.16.3
   np: 7.6.1
@@ -1010,7 +1008,7 @@ packages:
   /cac/6.7.12:
     resolution: {integrity: sha512-rM7E2ygtMkJqD9c7WnFU6fruFcN3xe4FM5yUmgxhZzIKJk4uHl9U/fhwdajGFQbQuv43FAUo1Fe8gX/oIKDeSA==}
     engines: {node: '>=8'}
-    dev: false
+    dev: true
 
   /cacheable-lookup/2.0.1:
     resolution: {integrity: sha512-EMMbsiOTcdngM/K6gV/OxF2x0t07+vMOWxZNSCRQMjO2MY2nhZQ6OYhOOpyQrbhqsgtvKGI7hcq6xjnA92USjg==}

@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "packageManager": "pnpm@7.1.6",
   "description": "cli-template",
-  "keywords": ["cli", "typescript", "template"],
+  "keywords": [
+    "cli",
+    "typescript",
+    "template"
+  ],
   "license": "MIT",
   "author": "peterroe",
   "module": "./dist/index.mjs",
@@ -27,6 +31,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.24.2",
+    "cac": "^6.7.12",
     "eslint": "8.16.0",
     "esno": "0.16.3",
     "np": "7.6.1",
