@@ -53,9 +53,6 @@ jobs:
       - name: Install
         run: nci
 
-      - name: Typecheck
-        run: nr typecheck
-
   test:
     runs-on: ${{ matrix.os }}
 
