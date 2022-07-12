@@ -9,7 +9,7 @@ specifiers:
   np: 7.6.2
   typescript: 4.7.4
   unbuild: 0.7.4
-  vite: 2.9.13
+  vite: 2.9.14
   vitest: 0.18.0
 
 devDependencies:
@@ -21,7 +21,7 @@ devDependencies:
   np: 7.6.2
   typescript: 4.7.4
   unbuild: 0.7.4
-  vite: 2.9.13
+  vite: 2.9.14
   vitest: 0.18.0
 
 packages:
@@ -5033,8 +5033,8 @@ packages:
       builtins: 1.0.3
     dev: true
 
-  /vite/2.9.13:
-    resolution: {integrity: sha512-AsOBAaT0AD7Mhe8DuK+/kE4aWYFMx/i0ZNi98hJclxb4e0OhQcZYUrvLjIaQ8e59Ui7txcvKMiJC1yftqpQoDw==}
+  /vite/2.9.14:
+    resolution: {integrity: sha512-P/UCjSpSMcE54r4mPak55hWAZPlyfS369svib/gpmz8/01L822lMPOJ/RYW6tLCe1RPvMvOsJ17erf55bKp4Hw==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
@@ -5087,7 +5087,7 @@ packages:
       local-pkg: 0.4.1
       tinypool: 0.2.1
       tinyspy: 0.3.3
-      vite: 2.9.13
+      vite: 2.9.14
     transitivePeerDependencies:
       - less
       - sass
