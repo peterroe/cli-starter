@@ -12,13 +12,15 @@
   "author": "peterroe",
   "module": "./dist/index.mjs",
   "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "bin": {
     "cli-starter": "./dist/index.mjs"
   },
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
@@ -28,6 +30,9 @@
     "start": "esno src/index.ts",
     "test": "vitest",
     "release": "bumpp"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.25.2",
