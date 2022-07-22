@@ -27,15 +27,15 @@
     "fix": "eslint --fix \"**/*.{ts,js}\"",
     "start": "esno src/index.ts",
     "test": "vitest",
-    "release": "np"
+    "release": "bumpp"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.25.2",
+    "bumpp": "^8.2.1",
     "cac": "6.7.12",
     "eslint": "8.20.0",
     "esno": "0.16.3",
     "husky": "4.3.8",
-    "np": "7.6.2",
     "typescript": "4.7.4",
     "unbuild": "0.7.6",
     "vite": "3.0.2",
