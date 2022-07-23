@@ -1,7 +1,7 @@
 {
   "name": "cli-starter",
   "version": "1.0.0",
-  "packageManager": "pnpm@7.5.2",
+  "packageManager": "pnpm@7.6.0",
   "description": "cli-template",
   "keywords": [
     "cli",
