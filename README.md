@@ -19,7 +19,6 @@ $ pnpm i    # npm install -g pnpm
 You can debug your cli tool before you publish it.
 
 ```shell
-$ npm i -g esno  # make sure you have esno installed
 $ npx esno src/index.ts  # run your cli tool in debug mode
 ```
 
