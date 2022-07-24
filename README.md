@@ -25,7 +25,7 @@ $ npx esno src/index.ts  # run your cli tool in debug mode
 
 ## Example
 
-This command will help you understand **how cli line tool works**:
+This command will help you understand **how cli tool works**:
 
 ```shell
 $ npx esno src/index.ts -h # show help

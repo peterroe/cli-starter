@@ -2,26 +2,32 @@
   "name": "cli-starter",
   "version": "1.0.0",
   "packageManager": "pnpm@7.6.0",
-  "description": "cli-template",
+  "description": "A command line tool template",
+  "author": "peterroe",
+  "license": "MIT",
+  "homepage": "https://github.com/peterroe/cli-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterroe/cli-starter.git"
+  },
+  "bugs": "https://github.com/peterroe/cli-starter/issues",
   "keywords": [
     "cli",
     "typescript",
     "template"
   ],
-  "license": "MIT",
-  "author": "peterroe",
-  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
   "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "bin": {
     "cli-starter": "./dist/index.mjs"
-  },
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
   },
   "scripts": {
     "build": "unbuild",
@@ -29,13 +35,15 @@
     "fix": "eslint --fix \"**/*.{ts,js}\"",
     "start": "esno src/index.ts",
     "test": "vitest",
-    "release": "bumpp"
+    "release": "bumpp",
+    "typecheck": "tsc --noEmit"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.25.2",
+    "@types/node": "^18.0.6",
     "bumpp": "8.2.1",
     "cac": "6.7.12",
     "eslint": "8.20.0",
@@ -48,7 +56,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "npm run lint && npm run typecheck"
     }
   }
 }
