@@ -16,25 +16,28 @@ $ pnpm i    # npm install -g pnpm
 
 ## Development
 
+You can debug your cli tool before you publish it.
+
 ```shell
-$ npx esno src/index.ts
+$ npm i -g esno  # make sure you have esno installed
+$ npx esno src/index.ts  # run your cli tool in debug mode
 ```
 
 ## Example
 
-```shell
-$ npx esno src/index.ts -h
-$ npx esno src/index.ts -v
-$ npx esno src/index.ts lint one two
-```
-
-## Build
+This command will help you understand **how cli line tool works**:
 
 ```shell
-$ pnpm build
+$ npx esno src/index.ts -h # show help
+$ npx esno src/index.ts -v # show version
+$ npx esno src/index.ts lint one two --name peterroe # demo usage
 ```
 
-## Publish
+And then you can rewrite `src/index.ts` to what you want
+
+Here are some projects that use `cli-starter`: [renames](https://github.com/peterroe/renames)、[tind](https://github.com/peterroe/tind)
+
+## Build && Publish
 
 Update the `name`:
 
@@ -48,16 +51,26 @@ Update the `name`:
   },
 ```
 
+Build it:
+
+```shell
+$ pnpm build
+```
+
 Publish to npm:
 
 ```shell
 $ pnpm release # or npm publish directly
 ```
 
-Install your own command line tool:
+## Try yourself!
+
+Install **your own** command line tool:
 
 ```
 $ npm install -g xxx
+$ xxx -h
+$ xxx -v
 ```
 
 Then use it...
