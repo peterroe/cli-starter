@@ -37,6 +37,8 @@ And then you can rewrite `src/index.ts` to what you want
 
 Here are some projects that use `cli-starter`: [renames](https://github.com/peterroe/renames)、[tind](https://github.com/peterroe/tind)
 
+More usage about `cac` please see [cac](https://github.com/cacjs/cac#simple-parsing)
+
 ## Build && Publish
 
 Update the `name`:
