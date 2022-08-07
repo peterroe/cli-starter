@@ -1,7 +1,7 @@
 {
   "name": "cli-starter",
   "version": "1.0.0",
-  "packageManager": "pnpm@7.8.0",
+  "packageManager": "pnpm@7.9.0",
   "description": "A command line tool template",
   "author": "peterroe",
   "license": "MIT",
