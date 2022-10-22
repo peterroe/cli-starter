@@ -16,10 +16,17 @@ $ pnpm i    # npm install -g pnpm
 
 ## Development
 
-You can debug your cli tool before you publish it.
+You can debug your cli tool in project.
 
 ```shell
 $ npx esno src/index.ts  # run your cli tool in debug mode
+```
+
+or link your cli tool to global
+
+```shell
+$ pnpm stub
+$ pnpm link --global
 ```
 
 ## Example
@@ -30,6 +37,11 @@ This command will help you understand **how cli tool works**:
 $ npx esno src/index.ts -h # show help
 $ npx esno src/index.ts -v # show version
 $ npx esno src/index.ts lint one two --name peterroe # demo usage
+
+# link global
+$ my-cli -h # show help
+$ my-cli -v # show version
+$ my-cli lint one two --name peterroe # demo usage
 ```
 
 And then you can rewrite `src/index.ts` to what you want
