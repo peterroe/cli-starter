@@ -31,6 +31,7 @@
   },
   "scripts": {
     "build": "unbuild",
+    "stub": "unbuild --stub",
     "lint": "eslint \"**/*.{ts,js}\"",
     "fix": "eslint --fix \"**/*.{ts,js}\"",
     "start": "esno src/index.ts",
