@@ -15,7 +15,7 @@
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
-      "vitest",
+      "vitest"
     ],
     "paths": {
       "~/*": ["src/*"]
