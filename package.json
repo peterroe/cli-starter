@@ -38,7 +38,8 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "release": "bumpp",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -51,15 +52,10 @@
     "cac": "6.7.14",
     "eslint": "8.23.1",
     "esno": "0.16.3",
-    "husky": "4.3.8",
+    "husky": "8.0.1",
     "typescript": "4.8.2",
     "unbuild": "0.8.11",
     "vite": "3.1.4",
     "vitest": "0.23.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run typecheck"
-    }
   }
 }
