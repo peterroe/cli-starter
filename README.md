@@ -11,6 +11,7 @@ Or:
 ```bash
 $ npx degit peterroe/cli-starter my-cli
 $ cd my-cli
+$ git init
 $ pnpm i    # npm install -g pnpm
 ```
 
