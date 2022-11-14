@@ -17,13 +17,19 @@ $ pnpm i    # npm install -g pnpm
 
 ## Development
 
-You can debug your cli tool in project.
+Modify `package.json` 
 
-```shell
-$ npx esno src/index.ts  # run your cli tool in debug mode
+```diff
+{
+- "name": "cli-starter",
++ "name": "my-cli",
+  "bin": {
+-    "cli-starter": "./bin/index.mjs"
++    "my-cli": "./bin/index.mjs"
+  },
 ```
 
-or link your cli tool to global
+Then you can link your cli tool to global
 
 ```shell
 $ pnpm stub
@@ -34,12 +40,7 @@ $ pnpm link --global
 
 This command will help you understand **how cli tool works**:
 
-```shell
-$ npx esno src/index.ts -h # show help
-$ npx esno src/index.ts -v # show version
-$ npx esno src/index.ts lint one two --name peterroe # demo usage
-
-# link global
+```bash
 $ my-cli -h # show help
 $ my-cli -v # show version
 $ my-cli lint one two --name peterroe # demo usage
@@ -53,18 +54,6 @@ More usage about `cac` please see [cac](https://github.com/cacjs/cac#simple-pars
 
 ## Build && Publish
 
-Update the `name`:
-
-```diff
-{
-- "name": "cli-starter",
-+ "name": "xxx",
-  "bin": {
--   "cli-starter": "./dist/index.mjs"
-+   "xxx": "./dist/index.mjs"
-  },
-```
-
 Build it:
 
 ```shell
@@ -74,6 +63,8 @@ $ pnpm build
 Publish to npm:
 
 ```shell
+$ git remote add origin xxx # make sure you have bound a repo
+$ git push origin main 
 $ pnpm release # or npm publish directly
 ```
 
