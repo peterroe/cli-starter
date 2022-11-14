@@ -1,6 +1,6 @@
 import { cac } from 'cac'
 import pkg from '../package.json'
-const cli = cac()
+const cli = cac(pkg.name)
 
 interface optionType { [k: string]: any }
 
