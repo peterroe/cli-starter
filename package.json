@@ -39,7 +39,7 @@
     "coverage": "vitest run --coverage",
     "release": "bumpp",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "git init & husky install"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
